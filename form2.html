@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <hr>
+    <form action="#" method="post" id="joinFrm">
+        <fieldset>
+            <legend>회원가입약식</legend>
+            <input type="text" placeholder="아이디" name="userId" class="userId"><br>
+            <input type="password" placeholder="비밀번호" name="userPwd" class="userPwd"><br>
+            <span>
+                성별 :
+                <label>남 <input type="radio" name="gender" value="male"></label>
+                <label>여 <input type="radio" name="gender" value="female"></label>
+            </span><br>
+            <span>
+                정보 저장 동의 :
+                <label>동의함 <input type="radio" name="agree_g" value="agree_y"></label>
+                <label>동의안함 <input type="radio" name="agree_g" value="agree_n"></label>
+            </span><br>
+            <span>
+                관심사<span>(2개 이상 선택하세요)</span>
+                <label>영화 <input type="checkbox" name="hobby" value="movie"></label>
+                <label>운동 <input type="checkbox" name="hobby" value="sports"></label>
+                <label>독서 <input type="checkbox" name="hobby" value="book"></label>
+            </span><br>
+            <span>
+                첨부파일
+                <input type="file" accept="image/*" value="userPhoto">
+            </span><br>
+            <button type="submit" id="joinBtn">가입</button>
+            <button type="reset" id="resetBtn">가입취소</button>
+        </fieldset>
+    </form>
+</body>
+</html>
